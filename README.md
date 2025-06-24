@@ -1,8 +1,3 @@
-Perfeito, Hermes! Agora começo a montar o curso completo de 5 dias com base nesse projeto realista e desafiador: um sistema público de árvore genealógica de Araripina, com backend em Directus Cloud e frontend com Nuxt 4 + Vuetify 3.8 + TypeScript + Bun, focado em HTML semântico, classes utilitárias do Vuetify e boas práticas para estagiários júnior.
-
-Te aviso assim que o material completo estiver pronto para revisão!
-
-
 # Curso Intensivo 5 Dias – Projeto Árvore Genealógica (HTML Semântico, Vuetify 3.8, Nuxt 4)
 
 Este curso prático de 5 dias (2 horas por dia) guiará desenvolvedores juniores na construção de um sistema público de **árvore genealógica** da cidade de Araripina. Vamos utilizar **Nuxt 4** (em modo de compatibilidade com a versão 4 futura), **Vuetify 3.8** como biblioteca de UI, **HTML semântico** para marcação acessível, e código **TypeScript** executando no ambiente Bun. O backend já está configurado usando **Directus 11** na nuvem (com login via GitHub), fornecendo APIs REST/GraphQL e autenticação pronta para uso. O frontend será implantado no **Cloudflare Pages** (com suporte a Workers para SSR).
