@@ -27,4 +27,14 @@ runtimeConfig: {
     apiBase: process.env.NUXT_PUBLIC_API_BASE || 'http://localhost:8055'
   }
 },
+nitro: {
+  preset: 'cloudflare-pages',
+  cloudflare: {
+    pages: {
+      routes: {
+        exclude: ['/images/*'],
+      },
+    },
+  },
+},
 })
