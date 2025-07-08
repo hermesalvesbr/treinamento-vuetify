@@ -8,11 +8,13 @@ const directus = createDirectus('https://genealogia.araripina.com.br')
 const email = ref('');
 const password = ref('');
 
+
 const onSubmit = async () => {
     try {
         const response = await directus.login({ email: email.value, password: password.value });
         alert('Login realizado com sucesso!');
         console.log('Token:', response);
+        window.location.href = 'https://genealogia.araripina.com.br/admin/'
     } catch (error) {
         alert('Erro ao fazer login. Verifique suas credenciais.');
         console.error(error);
