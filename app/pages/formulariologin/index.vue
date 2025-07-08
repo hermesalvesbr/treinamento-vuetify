@@ -14,7 +14,7 @@ const onSubmit = async () => {
         const response = await directus.login({ email: email.value, password: password.value });
         alert('Login realizado com sucesso!');
         console.log('Token:', response);
-        window.location.href = 'https://genealogia.araripina.com.br/admin/'
+        window.location.href = 'https://genealogia.araripina.com.br/admin/content'
     } catch (error) {
         alert('Erro ao fazer login. Verifique suas credenciais.');
         console.error(error);
