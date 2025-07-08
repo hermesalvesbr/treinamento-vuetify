@@ -1,10 +1,10 @@
 <template>
-    <div>
-        <h1>olá</h1>
-    </div>
+    <v-container>
+        <h1>Criação de conta via NUXT</h1>
+    </v-container>
 </template>
 <script setup lang="ts">
-import { createDirectus, rest, createUser, staticToken } from '@directus/sdk';
+import { createDirectus, rest, createUser, staticToken, authentication, login } from '@directus/sdk';
 
 const client = createDirectus('https://genealogia.araripina.com.br').with(rest())
     .with(staticToken('5AqwW_ZktfDpz_k2O1M5u_0mCiap-_z1'));
