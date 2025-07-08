@@ -52,8 +52,8 @@ async function onSubmit() {
 
 <template>
     <!-- Container centralizado-->
-    <v-container class="d-flex justify-center">
-        <v-card max-width="400">
+    <v-container class="d-flex justify-left">
+        <v-card min-width="400">
             <!-- Título do formulário -->
             <v-card-title>Criar Conta</v-card-title>
             <v-card-text>

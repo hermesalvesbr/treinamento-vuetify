@@ -21,8 +21,8 @@ const onSubmit = async () => {
 </script>
 
 <template>
-    <v-container class="d-flex justify-center">
-        <v-card max-width="400">
+    <v-container class="d-flex justify-left">
+        <v-card min-width="400">
             <v-card-title>Acesso</v-card-title>
             <v-card-text>
                 <v-form>
