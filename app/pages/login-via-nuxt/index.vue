@@ -6,8 +6,8 @@
 <script setup lang="ts">
 import { createDirectus, authentication } from '@directus/sdk';
 
-const email = "hygor.gabriel@softagon.com.br";
-const password = "Softagon@2025";
+const email = "seu-email@exemplo.com.br";
+const password = "sua-senha";
 
 const client = createDirectus('https://genealogia.araripina.com.br').with(authentication());
 

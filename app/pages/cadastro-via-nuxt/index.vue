@@ -14,7 +14,7 @@ const user_object = {
     "first_name": "IOOutrii Nome",
     "last_name": "Sobrenome",
     "email": "fake@softsssagon.com.br",
-    "password": "Softagon@2025$$",
+    "password": "Senha@2025$$",
     "language": "pt-BR"
 }
 console.log(user_object);
