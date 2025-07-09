@@ -52,8 +52,6 @@
 import { createDirectus, authentication } from '@directus/sdk';
 
 const directus = createDirectus('https://genealogia.araripina.com.br').with(authentication());
-const email = 'emanuel.paulo@softagon.com.br'
-const password = 'Ep210323@'
 const loading = ref(false)
 const message = ref('')
 const messageType = ref<'success' | 'error'>('success')
