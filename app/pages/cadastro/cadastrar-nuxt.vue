@@ -1,14 +1,14 @@
 <!-- <script setup lang="ts"> -->
 import { createDirectus, rest, createUser, staticToken } from '@directus/sdk';
 const client = createDirectus('https://genealogia.araripina.com.br').with(rest())
-    .with(staticToken('I7J3FjhaqvdjSEa8zbTJDbqaabjqcNo3'));
+    .with(staticToken(''));
 
 
 const user_object = {
     "first_name": "jean marcos",
     "last_name": "Batista e Silva",
-    "email": "jean.francisco@gmail.com",
-    "password": "8799297146",
+    "email": "jean.marcos0988798686@gmail.com",
+    "password": "9898976765tsW",
     "language": "pt-BR"
 }
 console.log(user_object);
