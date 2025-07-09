@@ -4,7 +4,7 @@ import { reactive, ref } from 'vue'
 
 // Cliente Directus para criar usuários
 const client = createDirectus('https://genealogia.araripina.com.br').with(rest())
-    .with(staticToken('5AqwW_ZktfDpz_k2O1M5u_0mCiap-_z1'));
+    .with(staticToken(''));
 
 // Estados mínimos para feedbeack e controle
 const loading = ref(false)

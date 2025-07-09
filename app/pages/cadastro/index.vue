@@ -7,7 +7,7 @@
 import { createDirectus, rest, createUser, staticToken, authentication, login } from '@directus/sdk';
 
 const client = createDirectus('https://genealogia.araripina.com.br').with(rest())
-    .with(staticToken('5AqwW_ZktfDpz_k2O1M5u_0mCiap-_z1'));
+    .with(staticToken(''));
 
 
 const user_object = {
