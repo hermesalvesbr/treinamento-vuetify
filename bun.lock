@@ -10,7 +10,7 @@
         "sass": "^1.89.2",
         "vue": "^3.5.17",
         "vue-router": "^4.5.1",
-        "vuetify": "3.8",
+        "vuetify": "^3.8",
       },
       "devDependencies": {
         "@antfu/eslint-config": "^4.16.2",
@@ -1804,7 +1804,7 @@
 
     "vue-router": ["vue-router@4.5.1", "", { "dependencies": { "@vue/devtools-api": "^6.6.4" }, "peerDependencies": { "vue": "^3.2.0" } }, "sha512-ogAF3P97NPm8fJsE4by9dwSYtDwXIY1nFY9T6DyQnGHd1E2Da94w9JIolpe42LJGIl0DwOHBi8TcRPlPGwbTtw=="],
 
-    "vuetify": ["vuetify@3.8.12", "", { "peerDependencies": { "typescript": ">=4.7", "vite-plugin-vuetify": ">=2.1.0", "vue": "^3.5.0", "webpack-plugin-vuetify": ">=3.1.0" }, "optionalPeers": ["typescript", "vite-plugin-vuetify", "webpack-plugin-vuetify"] }, "sha512-XRX/yRel/V5rlas12ovujVCo8RDb/NwICyef/DVYzybqbYz/UGHZd23sN5q1zw0h9jUN8httXI6ytWN7OFugmA=="],
+    "vuetify": ["vuetify@3.9.0", "", { "peerDependencies": { "typescript": ">=4.7", "vite-plugin-vuetify": ">=2.1.0", "vue": "^3.5.0", "webpack-plugin-vuetify": ">=3.1.0" }, "optionalPeers": ["typescript", "vite-plugin-vuetify", "webpack-plugin-vuetify"] }, "sha512-vjqyHP5gBFH4x0BAjdRAcS3FXY5OfHaKnC6Hhgln8tePZtKc3AUhF7BEJtcrD3l6XwL8gaYx/wMt+UP7X5EZJw=="],
 
     "web-streams-polyfill": ["web-streams-polyfill@3.3.3", "", {}, "sha512-d2JWLCivmZYTSIoge9MsgFCZrt571BikcWGYkjC1khllbTeDlGqZ2D8vD8E/lJa8WGWbb7Plm8/XJYV7IJHZZw=="],
 

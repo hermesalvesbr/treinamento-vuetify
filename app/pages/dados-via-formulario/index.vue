@@ -1,10 +1,23 @@
 <template>
-    <v-container>
-        <button @click="createNewItem">Criar pessoa</button>
-        <p v-if="isLoading">Enviando...</p>
-        <p v-if="error">{{ error }}</p>
+    <v-container class="d-flex justify-left">
+        <v-card min-width="400">
+            <v-card-title>Cadastro de pessoa</v-card-title>
+            <v-card-text>
+                <v-form>
+                    <v-text-field v-model="nome" label="Nome" required />
+                    <v-date-input v-model="nascimento" label="Nascimento"></v-date-input>
+                    <v-select v-model="sexo" label="Sexo" required :items="['masculino', 'feminino', 'outro']" />
+                    <v-card-actions class="justify-end" />
+                    <v-btn color="primary" @click="createNewItem">
+                        Cadastrar pessoa
+                    </v-btn>
+                </v-form>
+            </v-card-text>
+        </v-card>
     </v-container>
 </template>
+
+
 <script setup lang="ts">
 import { ref } from 'vue';
 import { createDirectus, staticToken, rest, createItem } from '@directus/sdk';
@@ -23,25 +36,24 @@ type Schema = {
 
 const secretkey = useRuntimeConfig().public.directusToken
 const urlDirectus = useRuntimeConfig().public.apiBase
-// 🔌 Cria o client com REST incluído
+
 const client = createDirectus<Schema>(urlDirectus)
     .with(staticToken(secretkey))
     .with(rest());
 
+const nome = ref('')
+const nascimento = ref()
+const sexo = ref('')
 
-// ✍️ Novo item a ser criado
 const newItem = ref({
-    nome: 'Andrezinho2',
-    nascimento: '1999-12-12',
-    sexo: 'Masculino',
-    status: 'published'
+    nome: nome,
+    nascimento: nascimento,
+    sexo: sexo
 });
 
-// 🌐 Estado de carregamento e erro
 const isLoading = ref(false);
 const error = ref('');
 
-// 🚀 Função para criar o item via request + createItem
 const createNewItem = async () => {
     isLoading.value = true;
     error.value = '';

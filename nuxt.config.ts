@@ -25,6 +25,11 @@ export default defineNuxtConfig({
     public: {
       apiBase: process.env.NUXT_PUBLIC_API_BASE,
       directusToken: process.env.NUXT_PUBLIC_API_SECRET
+    },
+    routeRules: {
+      "/directus/**": {
+        proxy: '${import.meta.env.API_URL}/**',
+      },
     }
-  },
+  }
 })
